@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 серп. 2016, 8:18:30
+    Author     : us9522
+*/
+.list_matches, .btnExit, .container-fluid, .sector_o, .sector_p, .sector_l, .bottom_forms, 
+.modal-header, .modal-footer, .btn, label{
+    display: none;
+}
+
+html{
+    border: 0;
+    border-color: #fff;
+    color: #fff;
+    border: 0px solid;
+}
+
+#PIP{
+    display: none;
+}
+
+.nameTeams{
+    float: left;
+    font-size: 300%;
+    margin-top: 17px;
+    margin-left: 50px;
+
+}
+
+.btn_place{
+    color: #FFF;
+    background: #FFF;
+    border-color: #FFF;
+    font-size: 0;
+}
+
+.form-controlP{
+    display: block;
+    border: 0;
+    float: left;
+    width: 120px;
+    height: 40px;
+    font-size: 290%;
+    margin-top: 285px;
+    margin-left: 615px;
+    margin-right: 0;
+    padding-right: 0;
+    border: 0px solid;
+}
+
+.row_print{
+    margin-left: 0px;
+    margin-top: 265px;
+}
+
+.number_print{
+    margin-left: 10px;
+    margin-top: 245px;
+}
+
+.price_print{
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 975px;
+}
+
+.dateMatch{
+    float: left;
+    color: #fff;
+    font-size: 270%;
+    margin-left: 395px;
+    margin-top: 22px;
+}
+
+.form-controlC, .form-controlD, .form-controlE{
+    font-size: 500%;
+}
+
+.row_printC, .row_printD, .row_printE{
+    margin-top: 275px;
+}
+
+.number_printC, .number_printD, .number_printE{
+    margin-top: 265px;
+}
+
+.price_printC, .price_printD, .price_printE{
+    margin-top: 255px;
+}
+
+

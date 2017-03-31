@@ -1,0 +1,59 @@
+body {
+
+  /* Location of the image */
+  background-image: url(../image/uraganFirst.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+input {
+    opacity:0;
+    font-size:12px;
+    font-family:Tahoma, Geneva, sans-serif;
+    opacity: 0.7;filter:Alpha(Opacity=70);
+    color:#000000;  
+    
+}
+#texstLog{
+    color: whitesmoke;
+}
+#error_masage{
+    color: red;
+}
+#container{
+    float: none;
+    margin: 0 auto;
+}
+
+div.well{
+  height: 250px;
+} 
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Absolute-Center.is-Responsive {
+  width: 50%; 
+  height: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 40px;
+}

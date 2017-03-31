@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 лип. 2016, 11:19:59
+    Author     : us9522
+*/
+
+
+.header{
+    height: 200px;
+}
+.headTable{
+    text-align: center;
+}
+input[type='text']{
+    text-align: center;
+    border: none;
+}
+#tableSub{
+    margin-left: 24px;
+    width: 97%;
+}
+.form-group{
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.columnTableSub{
+    aligin : center;
+    background-color: rgba(115, 37, 30, 0.61);
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.col-xs-12{
+    background-color: rgba(115, 37, 30, 0.61); 
+    color: #FFF5F5;
+}
+
+.id_none{
+    display: none;
+}
+.delete_sub{
+    display: none;
+}
+.col-xs-2{
+    float: left;
+}
+#addS{
+    margin-top: 10px;
+    margin-left: 24px;
+    float: left;
+}
+#editS{
+    margin-top: 10px;
+    margin-left: 3px;
+    float: left;
+}
+#button_Sectors{
+    margin-top: -9px;
+    margin-left: 3px;
+    float: left;
+}
+#button_SaleTickets{
+    margin-top: 10px;
+    margin-left: 3px;
+    float: left;
+}
+#button_InfoGame{
+    margin-top: 10px;
+    margin-left: 3px;
+    float: left;
+}
+#addSubJs{
+    margin-left: 10px;
+}
+body {
+  /* Location of the image */
+  background-image: url(../image/subPlace.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+} 

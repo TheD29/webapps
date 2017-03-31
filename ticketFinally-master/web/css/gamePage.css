@@ -1,0 +1,90 @@
+/* 
+    Created on : 1 серп. 2016, 10:12:22
+    Author     : us9546
+*/
+
+#listMathes{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#button_ShowMathes{
+    margin-top: 10px;
+}
+#addG{
+    margin-left: 24px;
+    float: left;
+}
+#editG{
+    margin-left: 3px;
+    float: left;
+}
+input[type='text']{
+    text-align: center;
+    border: none;
+}
+.table{
+    margin-left: 24px;
+}
+#tableGame{
+    width: 98%;
+}
+#columnTableGame {
+    aligin : center;
+    background-color: rgba(115, 37, 30, 0.61);
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.col-xs-12{
+    background-color: rgba(115, 37, 30, 0.61); 
+    color: #FFF5F5;
+}
+#button_AddGame{
+    margin-left: 3px;
+    float: left;
+}
+#button_SaleTickets{
+    margin-left: 3px;
+    float: left;
+}
+#inputAddTime{
+    margin-left: 10px;
+}
+#headTable{
+    text-align: center;
+}
+body {
+  /* Location of the image */
+  background-image: url(../image/futzalPlace.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+#nameTeamIn{
+   text-align: center;
+   font-weight:400;
+   font-size: 200%;
+   color: crimson;
+}
+
+.modal-body{
+    padding: 5px;
+}
+
+.btn_sectors{
+    margin-left: 3px;
+}
+

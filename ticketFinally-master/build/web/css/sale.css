@@ -1,0 +1,325 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 лип. 2016, 14:39:05
+    Author     : us9522
+*/
+
+/*.content{
+    background-color: #000;
+}
+
+.sector_f{
+    background-color: chartreuse;
+    height: 50px;
+}
+
+.sector_c {
+    background-color: chartreuse;
+    height: 75px;
+}
+
+.sector_d{
+    background-color: chartreuse;
+    height: 75px;  
+}*/
+
+/*.form-group_on_sale{
+    display: none;
+}*/
+
+.content{
+    width: 1334px;
+}
+
+.matches{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.btn_show{
+    margin: 0px 0px 14px 0;
+}
+.table-bordered{
+    width: 1200px;
+    margin: auto;
+}
+
+td {
+    text-align: center;
+   }
+.list_matches{
+       margin-left: 15px;
+       margin-top: 10px;
+   }   
+#button_InfoGame{
+        margin-left: 15px;
+        float: left;
+   }
+#button_AddSub{
+       margin-left: 15px; 
+       float: left;
+   }
+#nameTeams{
+       
+       font-size: 16pt;
+       color: #DEB887;
+   }
+   
+#headTableSale{
+    text-align: center;
+}   
+body {
+  /* Location of the image */
+  background-image: url(../image/fonSale.jpeg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}   
+
+.btnExit {
+  background: #010c14;
+  background-image: -webkit-linear-gradient(top, #010c14, #d13030);
+  background-image: -moz-linear-gradient(top, #010c14, #d13030);
+  background-image: -ms-linear-gradient(top, #010c14, #d13030);
+  background-image: -o-linear-gradient(top, #010c14, #d13030);
+  background-image: linear-gradient(to bottom, #010c14, #d13030);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnExit:hover {
+  text-decoration: none;
+}
+#exitBtn{
+    margin-top: 12px;
+    margin-left: 1144px; 
+}
+.btn-primary{
+    margin-top:5px; 
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #654450;
+    border-color: #f1a9b5;
+}
+
+.sector{
+    display: table;
+    margin-left: 20px;
+    float: left;
+    padding: 5px;
+    padding-top: 0px;
+    border-radius: 8px;
+}
+
+.btn_place{
+    padding: 0;
+    /*margin-left: 10px;*/
+    
+}
+
+#idClassG{
+    float: none;
+}
+
+#idClassF{
+    margin-right: 20px;
+}
+
+#idClassA{
+    margin-left: 305px;
+}
+
+#idClassA, #idClassB, #idClassVIP, #idClassF{
+    margin-right: 45px;
+}
+
+#idClassC, #idClassD, #idClassE{
+    font-size: 50%;
+    margin-top: 5px;
+}
+
+#idClassC{
+    margin-left: 90px;
+}
+
+.form_out{
+    margin: -50px 0px -50px 0px;
+}
+
+.form_add{
+    margin-top: 10px;
+}
+
+.bacg{
+    margin-top: 15px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-left: -29px;
+    padding: 0;
+}
+
+.sl_sector{
+    background-color: crimson;
+    border: 0;
+}
+
+.sector_o{
+    margin: 10px 0px 0px 190px;
+}
+
+.sector_p{
+    margin: 10px 0px 0px 590px;
+}
+
+.sector_l{
+    margin-left: 193px;
+    margin-top: 75px;
+    width: 1004px;
+    background-color: orange;
+}
+
+.btn_sectors{
+    margin-left: 15px;
+}
+
+#idClassA, #idClassB, #idClassF, #idClassG, #idClassC, #idClassE, #idClassVIP, #idClassD{
+    border-radius: 4px;
+    /* border-color: yellow; */
+    border: 1px solid yellow;
+    height: 95px;
+}
+
+
+.directory_sec{
+    font-size: 150%;
+    color: grey;
+    margin-top: 35px;
+    padding: 0px 89px 0px 65px;
+}
+
+.price_seс{
+    border-radius: 7px;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+
+.price_VIP{
+    background-color: darkmagenta;
+}
+
+.price_D{
+    background-color: #28a4c9;
+}
+
+.price_A{
+    background-color: yellow;
+}
+
+.price_L{
+    background-color: orange;
+}
+
+.price_D, .price_A, .price_L{
+    margin-top: 5px;
+}
+
+.btn_busy{
+    color: #000;
+    background-color: #000;
+    border-color: #000;
+}
+
+.sector_name{
+    color: #fff;
+}
+
+.sector_nameC, .sector_nameD, .sector_nameE{
+    font-size: 200%;
+}
+
+.cancel_of_order{
+    margin-top: 5px;
+}
+
+
+/*.first_sec{
+    padding-left: 215px;
+}*/
+
+.img-responsive{
+    height: 300px;
+    width: 1000px;
+}
+
+#idClassO{
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 205px;
+}
+
+#idClassP{
+    position: absolute;
+    margin-left: 1057px;
+    margin-top: 421px;
+    color: #000;
+}
+
+.subButton{
+    color: red;
+    background-color: red;
+    border-color: red;
+}
+
+.dateMatch{
+    
+    color: #fff;
+    padding: 0;
+    font-size: 12pt;
+    margin-top: 30px;
+}
+
+.form-controlD, .form-controlC, .form-controlE{
+    font-size: 200%;
+}
+
+#button_AddGame{
+    float: left;
+    margin-left: 401px;
+    margin-top: 5px;
+}
+.col-md-9 bacg{
+    .bacg {
+    margin-top: 4px;
+    height: 303px;
+    background-color: #ffffff;
+    margin-left: -31px;
+    padding: 0;
+}
+}

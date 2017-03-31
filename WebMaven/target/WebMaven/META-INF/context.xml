@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+
+    <Resource name="jdbc/magazine" auth="Container" type="javax.sql.DataSource"
+              maxActive="100" maxIdle="30" maxWait="10000"
+              username="Dima" password="oxanadimavg1929" driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/magazine?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+
+    <property name="connectionProperties">
+        <props>
+            <prop key="useUnicode">yes</prop>
+            <prop key="characterEncoding">utf8</prop>
+        </props>
+    </property>
+</Context>

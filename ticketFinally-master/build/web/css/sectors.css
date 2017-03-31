@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8 серп. 2016, 11:26:58
+    Author     : us9522
+*/
+
+
+
+
+.forms{
+    margin-top: 15px;
+}
+
+.container{
+    width: 450px;
+}
+
+.sector_info{
+    padding: 10px;
+}
+
+.name{
+    margin-left: 15px;
+    font-size: 125%;
+}
+
+.price{
+    margin-left: 60px;
+    font-size: 125%;
+}
+
+.order_ticket, .add_sub{
+    float: left;
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/ticketFinally">
+    <Realm className="org.apache.catalina.realm.JDBCRealm"
+           driverName="com.mysql.jdbc.Driver"
+           connectionURL="jdbc:mysql://10.93.105.49:3306/tickets;user=tickets;password=tickets;databaseName=tickets"
+           userTable="tickets.users" userNameCol="login" userCredCol="password"
+           userRoleTable="tickets.user_role" roleNameCol="user_role" />
+    
+    <Resource name="jdbc/sample" auth="Container" type="javax.sql.DataSource"
+                    maxActive="100" maxIdle="30" maxWait="10000"
+                    username="tickets" password="tickets" driverClassName="com.mysql.jdbc.Driver"
+                    url="jdbc:mysql://10.93.105.49:3306/tickets?useUnicode=true&amp;characterEncoding=utf8"/>
+                    
+    <property name="connectionProperties">
+        <props>
+            <prop key="useUnicode">yes</prop>
+            <prop key="characterEncoding">utf8</prop>
+        </props>
+    </property>
+</Context>
