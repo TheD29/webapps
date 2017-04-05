@@ -9,7 +9,9 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>Dima</user-name>
-      <resolve-scope>sakila:|magazine:*</resolve-scope>
+      <introspection-schemas>*:magazine</introspection-schemas>
+      <resolve-scope>*:magazine,sakila</resolve-scope>
+      <unqualified-resolve-schemas>*:magazine,sakila</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

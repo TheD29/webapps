@@ -13,6 +13,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Created by Dima on 30.03.2017.
@@ -22,7 +24,7 @@ public class UserController extends HttpServlet {
     private static ResultSet rs;
     private static Statement stmt;
 
-    private void validateUserValidate(HttpServletRequest request, HttpServletResponse response)
+    private void validateUser(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         {
             ResultSet rs = null;
@@ -34,38 +36,36 @@ public class UserController extends HttpServlet {
             response.setContentType("text/html; charset=UTF-8");
             response.setCharacterEncoding("UTF-8");
             PrintWriter pw = response.getWriter();
-            try {
-                Connection conn = DbConnector.getConnection();
-                Statement statement = conn.createStatement();
-
-                String sql = "SELECT * FROM magazine.users "
-                        + "WHERE accountname ='" + yName + "' "
-                        + "AND password = '" + yPassword + "'";
-                rs = statement.executeQuery(sql);
-                session.setAttribute("accauntname", "loginAccess");
-                if (rs.next()) {
-                    response.sendRedirect("/pages/main.jsp");
-                    // request.getRequestDispatcher("/pages/main.jsp").forward(request, response);
-                    //pw.print("Name" + rs.getString("firstname"));
-                } else
-                    pw.print("Логін або пароль не вірні");
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
+//            if (yName.length() > 4 && yName.length() < 15)
                 try {
-                    stmt.close();
-                    conn.close();
+                    Connection conn = DbConnector.getConnection();
+                    Statement statement = conn.createStatement();
+
+                    String sql = "SELECT * FROM magazine.users "
+                            + "WHERE accountname ='" + yName + "' "
+                            + "AND password = '" + yPassword + "'";
+                    rs = statement.executeQuery(sql);
+                    session.setAttribute("accountname", "loginAccess");
+                    if (rs.next()) {
+                        response.sendRedirect("pages/main.jsp");
+                    } else {
+                        session.setAttribute("login", "loginFailed");
+                        response.sendRedirect("index.jsp");
+                    }
                 } catch (SQLException e) {
                     e.printStackTrace();
+                    Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, e);
                 }
-            }
+//            else
+//                pw.print("Логін не може бути менше 4 або більше 15 символів" + yName);
         }
     }
 
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        validateUserValidate(request, response);
+        validateUser(request, response);
+
     }
 }
-
 

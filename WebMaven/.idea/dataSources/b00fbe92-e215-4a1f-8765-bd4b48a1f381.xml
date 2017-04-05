@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="jdbc/magazine">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
     <root id="1"/>
     <schema id="2" parent="1" name="magazine">
       <Current>1</Current>
@@ -90,6 +90,7 @@ Id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="30" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
@@ -114,6 +115,7 @@ Id</ColNames>
       <DataType>datetime|0</DataType>
     </column>
     <key id="35" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
@@ -202,6 +204,7 @@ Id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="54" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
@@ -225,6 +228,7 @@ Id</ColNames>
       <DataType>datetime|0</DataType>
     </column>
     <key id="59" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
@@ -299,6 +303,7 @@ Id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="74" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
@@ -354,6 +359,7 @@ Id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="85" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
